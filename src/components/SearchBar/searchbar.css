@@ -1,0 +1,16 @@
+.inputSearch {
+  border-radius: 25px 0px 0px 25px;
+  padding-left: 20px;
+  border: none;
+  width: 500px;
+  height: 35px;
+  font-size: 25px;
+  font-family: Heebo;
+  font-weight: 400;
+  outline: none;
+  justify-items: center;
+}
+
+.searchIcon {
+  color: white;
+}

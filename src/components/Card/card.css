@@ -1,0 +1,38 @@
+#image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  grid-area: image;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+#profil {
+  background: yellow;
+  grid-area: profil;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+#evolution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: blue;
+  grid-area: evolution;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+#stats {
+  background: green;
+  grid-area: stats;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.image-responsive {
+  width: 50%;
+  height: auto;
+}

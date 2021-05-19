@@ -1,0 +1,8 @@
+.App {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  padding: 20px;
+  background-color: #e9ecef;
+}
