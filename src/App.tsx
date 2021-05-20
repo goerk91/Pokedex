@@ -3,7 +3,7 @@ import "./App.css";
 import SearchBar from "./components/SearchBar/SearchBar";
 import Card from "./components/Card/Card";
 import { IPokemonData } from "./components/Card/interfaces";
-//git branch test
+//git branch test new feature
 class Student {
   [index: string]: any;
   name?: string;
