@@ -1,3 +1,4 @@
+import { useState } from "hoist-non-react-statics/node_modules/@types/react";
 import styled from "styled-components";
 import "./card.css";
 import { IPokemonData } from "./interfaces";
