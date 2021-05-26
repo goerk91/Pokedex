@@ -43,7 +43,7 @@ interface ICardProps {
 const Card = (props: ICardProps) => {
   // console.log("Current Data:", props.currentData); // currentData is typeof "object"
 
-  /* currentData?.sprite "?." steht für optional chaining
+  /* currentData?.sprite "?." steht für optional chaining!
   -> Typescipt kompiliert nicht weiter wenn "null" oder "undefined" ausgegeben wird */
   // <div id="evolution">{props.currentData?.id}</div>
   console.log("Data:", props.currentData);
