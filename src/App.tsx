@@ -4,8 +4,6 @@ import SearchBar from "./components/SearchBar/SearchBar";
 import Card from "./components/Card/Card";
 import { IPokemonData } from "./components/Card/interfaces";
 
-//git branch test
-
 function App() {
   const [pokemon, setPokemon] = useState<string>("pikachu");
   const [pokemonData, setPokemonData] = useState<IPokemonData | null>(null);
@@ -19,12 +17,12 @@ function App() {
       });
   }, [pokemon]);
 
-  console.log("Current Data:", pokemonData);
+  // console.log("Current Data:", pokemonData);
 
   const addPokemon = (urlPokemonName: string) => {
     setPokemon(urlPokemonName);
   };
-  // console.log("PokemonUrl: ", pokemon);
+  console.log("types!: ", pokemonData?.types[0].type.name);
 
   return (
     <div className="App">

@@ -1,7 +1,7 @@
-import { useState } from "hoist-non-react-statics/node_modules/@types/react";
 import styled from "styled-components";
 import "./card.css";
 import { IPokemonData } from "./interfaces";
+import Stats from "./components/Stats";
 
 const StyledCard = styled.div`
   display: grid;
@@ -41,10 +41,7 @@ interface ICardProps {
 }
 
 const Card = (props: ICardProps) => {
-  // console.log("Current Data:", props.currentData); // currentData is typeof "object"
-
-  /* currentData?.sprite "?." steht für optional chaining
-  -> Typescipt kompiliert nicht weiter wenn "null" oder "undefined" ausgegeben wird */
+  console.log("Data:", props.currentData);
 
   return (
     <StyledCard>
@@ -56,7 +53,9 @@ const Card = (props: ICardProps) => {
       </div>
       <div id="profil">{props.currentData?.name}</div>
       <div id="evolution">{props.currentData?.id}</div>
-      <div id="stats">Box 4</div>
+      <div id="stats">
+        <Stats currentData={props.currentData} />
+      </div>
     </StyledCard>
   );
 };

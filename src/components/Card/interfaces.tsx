@@ -7,6 +7,15 @@ interface ISpritesOther {
   dream_world: IDeamWorld;
 }
 
+interface IType {
+  name: string;
+  url: string;
+}
+
+interface ITypes {
+  type: IType;
+}
+
 interface ISprites {
   back_female: string;
   back_shiny_female: string;
@@ -24,4 +33,5 @@ export interface IPokemonData {
   sprites: ISprites;
   id: number;
   order: number;
+  types: ITypes[];
 }

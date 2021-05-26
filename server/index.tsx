@@ -10,10 +10,10 @@ const db = mysql.createConnection({
   user: "root",
   host: "localhost",
   password: "password",
-  database: "pokemon",
+  database: "pokemondb",
 });
 
-app.post("/create,", (req, res) => {
+app.post("/create", (req, res) => {
   const id = req.body.id;
   const name = req.body.name;
   const type = req.body.type;
