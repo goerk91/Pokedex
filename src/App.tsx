@@ -4,6 +4,15 @@ import SearchBar from "./components/SearchBar/SearchBar";
 import Card from "./components/Card/Card";
 import { IPokemonData } from "./components/Card/interfaces";
 
+// const obj1 = {
+//   name: "Metin",
+//   alter: 12,
+// };
+// const obj2 = {
+//   name: "Tom",
+//   alter: 30,
+// };
+
 function App() {
   const [pokemon, setPokemon] = useState<string>("pikachu");
   const [pokemonData, setPokemonData] = useState<IPokemonData | null>(null);
