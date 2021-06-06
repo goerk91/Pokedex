@@ -1,6 +1,6 @@
 interface IDeamWorld {
-  front_default: string | undefined;
-  front_female: string | undefined;
+  front_default: string;
+  front_female: string;
 }
 
 interface ISpritesOther {

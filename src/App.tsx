@@ -31,7 +31,6 @@ function App() {
   const addPokemon = (urlPokemonName: string) => {
     setPokemon(urlPokemonName);
   };
-  console.log("types!: ", pokemonData?.types[0].type.name);
 
   return (
     <div className="App">

@@ -46,13 +46,16 @@ const Card = (props: ICardProps) => {
   /* currentData?.sprite "?." steht für optional chaining!
   -> Typescipt kompiliert nicht weiter wenn "null" oder "undefined" ausgegeben wird */
   // <div id="evolution">{props.currentData?.id}</div>
-  console.log("Data:", props.currentData);
+  // console.log("Data:", props.currentData);
 
   return (
     <StyledCard>
       <div id="image">
         <img
-          src={props.currentData?.sprites.other.dream_world.front_default}
+          src={
+            props.currentData?.sprites.other.dream_world.front_default ||
+            "Error: props.currentData hat keine Daten. Siehe Card.tsx"
+          }
           className="image-responsive"
         />
       </div>

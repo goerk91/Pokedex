@@ -54,7 +54,7 @@ export default function Stats(props: IStats) {
     e.preventDefault();
 
     const data = { id: id, name: name, type: type };
-    console.log(data);
+    // console.log(data);
     const options = {
       method: "POST",
       headers: {
